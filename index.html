@@ -26,10 +26,10 @@
       <!-- Header section -->
       <div class="row header">
         <div class="col-md-6">
-          <img src="http://placehold.it/150x150" alt="Logo">
+          <img src="images/logo.png" alt="Logo">
         </div>
         <div class="col-md-6 text-right text-uppercase">
-          <h1>Michael Sandahl</h1>
+          <h1 class="text-thin">Michael Sandahl</h1>
           <h4>Front-End Ninja</h4>
         </div>
       </div> 
@@ -44,29 +44,29 @@
       <!-- Large image -->
       <div class="row">
         <div class="col-md-12">
-          <img src="http://placehold.it/1400x400" alt="Placeholder" class="img-responsive">
+          <img src="images/main_image.jpg" alt="Laptop on Desk" class="img-responsive">
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-12">
-          <h2>Featured Work</h2>
+          <h2 class="text-muted">Featured Work</h2>
         </div>
       </div>
       <!-- Portfolio Area -->
       <div class="row text-center text-uppercase">
         <div class="col-md-4">
-          <img src="http://placehold.it/400x400" alt="Placehold" class="img-responsive">
+          <img src="images/project_1.png" alt="Placehold" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#project1">
+          <h3>Project Portfolio</h3>
+          <a href="#">Check it out</a>
+        </div>
+        <div class="col-md-4">
+          <img src="images/project_2_placehold.jpg" alt="Placehold" class="img-responsive img-thumbnail">
           <h3>My App</h3>
           <a href="#">Check it out</a>
         </div>
         <div class="col-md-4">
-          <img src="http://placehold.it/400x400" alt="Placehold" class="img-responsive">
-          <h3>My App</h3>
-          <a href="#">Check it out</a>
-        </div>
-        <div class="col-md-4">
-          <img src="http://placehold.it/400x400" alt="Placehold" class="img-responsive">
+          <img src="images/project_3_placehold.jpg" alt="Placehold" class="img-responsive img-thumbnail">
           <h3>My App</h3>
           <a href="#">Check it out</a>
         </div> 
@@ -93,5 +93,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/project_1.png">
+            Creating a portfolio from a design mockup was the first project through Udacity. I used Bootstrap as the framework, and created the HTML and custom CSS to replicate the design. The exercise gave me some initial experience in taking a design concept to a working model by tweaking and testing the code as I went along, trying to approximate the initial design as best I could.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

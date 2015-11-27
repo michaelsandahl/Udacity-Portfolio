@@ -2,4 +2,17 @@
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+	color: #3c3c3cff;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.text-muted {
+	color: #7f7f7fff;
+}
+
+.header {
+	margin-top: 20px;
 }
