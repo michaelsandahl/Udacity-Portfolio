@@ -25,14 +25,19 @@
 
       <!-- Header section -->
       <div class="row header">
-        <div class="col-md-6">
-          <img src="images/logo.png" alt="Logo">
+        <!-- <div class="col-xs-3 header_logo">
+          <img src="images/logo.jpg" alt="Logo" class="img-circle">
         </div>
-        <div class="col-md-6 text-right text-uppercase">
+        <div class="col-xs-9 text-right text-uppercase header_title">
           <h1 class="text-thin">Michael Sandahl</h1>
           <h4>Front-End Ninja</h4>
+        </div> -->
+        <div class="col-xs-12">
+          <img src="images/logo.jpg" alt="Logo" class="header_logo img-circle">
+          <h1 class="header_title text-thin">Michael Sandahl<br><small>Front End Ninja</small></h1>
         </div>
       </div> 
+
 
       <!-- Horizontal rule -->
       <div class="row">
@@ -78,13 +83,6 @@
           <hr>
         </div>
       </div>
-
-      <!-- Footer -->
-      <div class="row footer">
-        <col-md-12>
-          <p>&copy Small Step Design 2015</p>
-        </col-md-12>
-      </div>
     </div> <!-- End Main Container -->
       
 
@@ -93,12 +91,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Modal -->
+
+    <!-- Modal (Added per the Udacity Intro to HTML/CSS course) -->
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+            <h4 class="modal-title" id="myModalLabel">Portfolio Project</h4>
           </div>
           <div class="modal-body">
             <img class="img-responsive" src="images/project_1.png">
@@ -110,5 +109,6 @@
         </div>
       </div>
     </div>
+    <!-- TODO: Add Modals for the other projects -->
   </body>
 </html>
