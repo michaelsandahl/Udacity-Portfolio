@@ -20,3 +20,38 @@ body {
 hr {
 	border-top: 2px solid #E5E5E5;
 }
+
+/* Header Styles */
+.header_logo {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	height: auto;
+}
+.header_title {
+	display: inline-block;
+	float: right;
+	vertical-align: bottom;
+}
+
+/*.header_title h1 {
+	font-size: 24px;
+}
+
+.header_title h4 {
+	font-size: 12px;
+}
+
+@media screen  {
+	
+}*/
+@media screen and (max-width: 400px) {
+	.header_logo {
+		height: 60px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	h1.header_title {
+		font-size: 24px;
+	}
+	
+}
