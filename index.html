@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet'>
     <title>Michael Sandahl Portfolio</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,19 +25,12 @@
     <div class="container">
 
       <!-- Header section -->
-      <div class="row header">
-        <!-- <div class="col-xs-3 header_logo">
-          <img src="images/logo.jpg" alt="Logo" class="img-circle">
-        </div>
-        <div class="col-xs-9 text-right text-uppercase header_title">
-          <h1 class="text-thin">Michael Sandahl</h1>
-          <h4>Front-End Ninja</h4>
-        </div> -->
+      <header class="row header">
         <div class="col-xs-12">
-          <img src="images/logo.jpg" alt="Logo" class="header_logo img-circle">
-          <h1 class="header_title text-thin">Michael Sandahl<br><small>Front End Ninja</small></h1>
+          <img src="images/logo.jpg" alt="Logo" class="header-logo img-circle img-responsive">
+          <h1 class="header-title text-thin">Michael Sandahl<br><small>Front End Ninja</small></h1>
         </div>
-      </div> 
+      </header> 
 
 
       <!-- Horizontal rule -->
@@ -47,35 +41,38 @@
       </div>
 
       <!-- Large image -->
-      <div class="row">
+      <section class="row">
         <div class="col-md-12">
           <img src="images/main_image.jpg" alt="Laptop on Desk" class="img-responsive">
         </div>
-      </div>
+      </section>
 
-      <div class="row">
+      <section class="row">
         <div class="col-md-12">
           <h2 class="text-muted">Featured Work</h2>
         </div>
-      </div>
+      </section>
       <!-- Portfolio Area -->
-      <div class="row text-center text-uppercase">
-        <div class="col-md-4">
-          <img src="images/project_1.png" alt="Placehold" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#project1">
+      <section class="row text-center text-uppercase">
+        <!-- Portoflio Project -->
+        <article class="col-md-4">
+          <img src="images/project_1.png" alt="Screenshot of code" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#project1">
           <h3>Project Portfolio</h3>
-          <a href="https://github.com/michaelsandahl/Udacity-Portfolio">See it at Github</a>
-        </div>
-        <div class="col-md-4">
-          <img src="images/project_2_placehold.jpg" alt="Placehold" class="img-responsive img-thumbnail">
+          <a href="https://github.com/michaelsandahl/Udacity-Portfolio" target="_blank">See it at Github</a>
+        </article>
+        <!-- Project 2 -->
+        <article class="col-md-4">
+          <img src="images/project_2_placehold.jpg" alt="Placehold" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#project2">
           <h3>My App</h3>
           <a href="#">Coming Soon</a>
-        </div>
-        <div class="col-md-4">
-          <img src="images/project_3_placehold.jpg" alt="Placehold" class="img-responsive img-thumbnail">
+        </article>
+        <!-- Project 3 -->
+        <article class="col-md-4">
+          <img src="images/project_3_placehold.jpg" alt="Placehold" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#project3">
           <h3>My App</h3>
           <a href="#">Coming Soon</a>
-        </div> 
-      </div>
+        </article> 
+      </section>
 
       <!-- Horizontal rule -->
       <div class="row">
@@ -84,24 +81,24 @@
         </div>
       </div>
     </div> <!-- End Main Container -->
-      
-
-
+    <!-- TODO: Add Modals for the other projects -->
+  </body>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Modal (Added per the Udacity Intro to HTML/CSS course) -->
+    <!-- Portofolio Project Modal -->
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Portfolio Project</h4>
+            <h4 class="modal-title" id="myModalLabel">Project Portfolio</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/project_1.png">
-            Creating a portfolio from a design mockup was the first project through Udacity. I used Bootstrap as the framework, and created the HTML and custom CSS to replicate the design. The exercise gave me some initial experience in taking a design concept to a working model by tweaking and testing the code as I went along, trying to approximate the initial design as best I could. <a href="https://github.com/michaelsandahl/Udacity-Portfolio">See it on Github.</a>
+            <img class="img-responsive" src="images/project_1.png" alt="Screenshot of code">
+            <p>Creating a portfolio from a design mockup was the first project through Udacity. I used Bootstrap as the framework, and created the HTML and custom CSS to replicate the design. The exercise gave me some initial experience in taking a design concept to a working model by tweaking and testing the code as I went along, trying to approximate the initial design as best I could. <a href="https://github.com/michaelsandahl/Udacity-Portfolio" target="_blank">See it on Github.</a></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -109,6 +106,40 @@
         </div>
       </div>
     </div>
-    <!-- TODO: Add Modals for the other projects -->
-  </body>
+
+    <!-- Project 2 Modal -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">My App</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/project_2_placehold.jpg" alt="Placehold">
+            <p>Coming Soon!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 Modal -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">My App</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/project_3_placehold.jpg" alt="Placehold">
+            <p>Coming Soon!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </html>

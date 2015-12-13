@@ -2,7 +2,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	color: #3c3c3cff;
+	color: #3c3c3c;
 }
 
 .text-thin {
@@ -10,7 +10,7 @@ body {
 }
 
 .text-muted {
-	color: #7f7f7fff;
+	color: #7f7f7f;
 }
 
 .header {
@@ -18,39 +18,30 @@ body {
 }
 
 hr {
-	border-top: 2px solid #E5E5E5;
+	border-top: 2px solid #e5e5e5;
 }
 
 /* Header Styles */
-.header_logo {
+.header-logo {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	height: auto;
+	display: inline;
 }
-.header_title {
+
+.header-title {
 	display: inline-block;
 	float: right;
 	vertical-align: bottom;
 }
 
-/*.header_title h1 {
-	font-size: 24px;
-}
-
-.header_title h4 {
-	font-size: 12px;
-}
-
-@media screen  {
-	
-}*/
 @media screen and (max-width: 400px) {
-	.header_logo {
+	.header-logo {
 		height: 60px;
 		margin-top: 20px;
 		margin-bottom: 10px;
 	}
-	h1.header_title {
+	h1.header-title {
 		font-size: 24px;
 	}
 	
